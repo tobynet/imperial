@@ -1,4 +1,4 @@
-# Imperial {template engine|subset of mustache|etc}
+# Imperial {template engine | subset of mustache | etc}
 
 `Imperial` is a template engine for Excel using PowerShell.
 
