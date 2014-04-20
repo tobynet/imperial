@@ -13,6 +13,6 @@
 
 # Help us!
 
-* You know how to test our PowerShell?
+* You know how to test at PowerShell?
 * You know some CI server for testing PowerShell?
 
