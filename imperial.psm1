@@ -30,6 +30,17 @@ function Get-HashTableFromCSV([Object[]]$csv) {
     $variables
 }
 
+<#
+    Replace headers
+#>
+function Replace-HeadersAndFooters($sheet){
+    # ...Is there a more simple method????
+    $page = $sheet.PageSetup
+    ('$page.LeftHeader', '$page.CenterHeader', '$page.RightHeader', 
+    '$page.LeftHooter', '$page.CenterHooter', '$page.RightHooter') | %{
+        Invoke-Expression "if ($_) { $_ = Render-Template $_ `$variables }"
+    }
+}
 
 <#
 e.g.1
@@ -76,9 +87,10 @@ function Render-Excel([string]$inputFilename, [string]$outputFilename, [HashTabl
                     }
                 }
             }
-            
-            
+                        
             $range.Value2 = $buffer
+            
+            Replace-HeadersAndFooters $sheet
         }
         echo ( "Save as $outputFilename")
         $books.SaveAs($outputFilename)
