@@ -1,10 +1,8 @@
 # Imperial {template engine | subset of mustache | etc}
 
-The `Imperial` is a template engine for Excel using PowerShell.
+The `Imperial` is a template engine for `Excel` using `PowerShell`.
 
-(Note: Now this is a prototype)
-
-* todo: Screenshots here
+todo: Screenshots here
 
 # Requirements
 
@@ -59,7 +57,7 @@ In PowerShell prompt:
         -variables (Get-HashTableFromCSV (Import-Csv "my_variables.csv"))
     ```
 
-    * todo: Screenshots here
+    todo: Screenshots for result here
 
 
 # Todos
