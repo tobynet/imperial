@@ -35,7 +35,7 @@ In PowerShell prompt:
 
 1. Make a template file for Excel.
 
-    * Write `{{variable_name}}` in Excel files
+    * Write `{{foo}}` to mark for replacing as a value of `$variable['foo']` in Excel files like [the `mustache` template engine](http://mustache.github.io/)
 
     todo: Write how to make template with some screenshots.
 
@@ -62,10 +62,11 @@ In PowerShell prompt:
 
 # Todos
 
-* Write documents
-    * Animation GIFs
+* todo: Write documents
+    * todo: Animation GIFs
 * **DONE: Modulize**
-* Add UnitTests
+* todo: Add UnitTests
+* todo: Support full mustache tag types 
 
 # Help us!
 
