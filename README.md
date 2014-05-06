@@ -31,7 +31,7 @@ In PowerShell prompt:
     > Import-Module imperial -verbose
     ```
 
-    You dont't have to do above if you have PowerShell 3.0 or lator.
+    > :memo: You dont't have to do above if you have PowerShell 3.0 or lator.
 
 1. Make a template file for Excel.
 
