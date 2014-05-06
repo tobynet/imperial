@@ -1,13 +1,4 @@
-﻿# Usage: imperial.ps1 input.xslx output.xslx variables.csv
-
-Param (
-    [parameter(Mandatory=$true)][string]$inputFile,
-    [parameter(Mandatory=$true)][string]$outputFile,
-    [string]$csvFile
-)
-
-
-<#
+﻿<#
 e.g.
     
     > Render-Template -source "{{foo}} bar" -variables @{foo="REPLACED"}
@@ -96,8 +87,13 @@ function Render-Excel([string]$inputFilename, [string]$outputFilename, [HashTabl
     }
 }
 
+<#
 Render-Excel `
     -inputFilename (ls $inputFile).fullname `
     -outputFilename ([Io.Path]::GetFullPath($outputFile)) `
     -variables (Get-HashTableFromCSV (Import-Csv $csvFile))
 echo "DONE"
+#>
+
+Export-ModuleMember -Function Render-Excel,Render-Template
+
