@@ -23,7 +23,7 @@ In PowerShell prompt:
 > $client.DownloadFile('https://raw.githubusercontent.com/toooooooby/imperial/master/imperial.psm1', 'imperial.psm1')
 ```
 
-> :memo: The oepration of the above means *download modules and put in to the directory for module*.
+> :memo: The oepration of the above means **download modules and put in to the directory for module**.
 
 # How to use
 
@@ -66,7 +66,7 @@ In PowerShell prompt:
 
 * Write documents
     * Animation GIFs
-* *DONE: Modulize*
+* **DONE: Modulize**
 * Add UnitTests
 
 # Help us!
